@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+$bg-color: black;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  height: 70px;
+  background-color: $bg-color;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  > img {
+    height: 70%;
+  }
+  > div {
+    width: 100%;
+    margin-left: 4vmax;
+
+    > a {
+      margin: 2vmax;
+      font-size: 1rem;
+    }
+  }
+
+  > svg {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(118, 118, 118);
+    }
+  }
+}
